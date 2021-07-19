@@ -37,7 +37,7 @@ router.get('/map/:id', async (req: express.Request,
 router.get('/getMaps', async (req: express.Request,
   res: express.Response) => {
   const map = await BfModel.find();
-  res.send({ data: map });
+  res.send(map );
 });
 router.delete('/:id', async (req: express.Request,
   res: express.Response) => {
